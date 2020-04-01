@@ -1,0 +1,18 @@
+1. Installing Unity
+2. Unity Interface:
+* Views:
+  - Scene View: Allows to zoom, move, rotate,... objects.
+    + 2 initial game object: Main Camera, Directional Light
+    + Each object has many components
+  - Game View: View in game.
+* Assets: Game assets, easily add to objects by dragging.
+3. Create game:
+* Create ground
+  - Transform: Position - by coordinates, Rotation, Scale
+* Create Player
+  - Add material
+* Run a game:
+  - Add Physics/Rigidbody component
+  - Box Collider/Sphere Collider
+4. Camera:
+  - Clear Flags - Color
