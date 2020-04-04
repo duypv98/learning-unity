@@ -1,0 +1,7 @@
+1. Programming with Unity
+* Add script component to an object
+  - void Start() {}: initialized when start a game
+  - void Update() {}: called once per frame
+  - void FixedUpdate() {}: using to mess with physics
+* Problem with physics: Frame rate ...
+* Debug in Unity Console
