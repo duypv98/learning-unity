@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
     // Reference to the Rigidbody component called "rb"
-    public Rigidbody rb;
+    public Rigidbody Rb;
 
-    public float forwardForce = 2000f;
-    public float sidewaysForce = 500f;
+    public float ForwardForce = 1000f;
+    public float SidewaysForce = 500f;
 
     // Start is called before the first frame update
     /*void Start() {
@@ -20,14 +20,14 @@ public class PlayerMovement : MonoBehaviour {
     // FixedUpdate: using to mess with physics
     void FixedUpdate() {
         // Add a forward force
-        rb.AddForce(0, 0, forwardForce * Time.fixedDeltaTime);
+        Rb.AddForce(0, 0, ForwardForce * Time.fixedDeltaTime);
 
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) {
-            rb.AddForce(sidewaysForce * Time.fixedDeltaTime, 0, 0);
+            Rb.AddForce(SidewaysForce * Time.fixedDeltaTime, 0, 0);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) {
-            rb.AddForce(-sidewaysForce * Time.fixedDeltaTime, 0, 0);
+            Rb.AddForce(-SidewaysForce * Time.fixedDeltaTime, 0, 0);
         }
 
     }
