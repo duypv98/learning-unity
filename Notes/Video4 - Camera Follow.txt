@@ -1,0 +1,9 @@
+Camera Follow: Multiple ways to make
+1. Parenting the camera to the player:
+- In Unity, simply drag the Main Camera under the Player Object.
+- Problem: When the Player is rotated or moves ahead, the camera is rotated too.
+--> Imaging when the Player collide something and it'll start to spin and so with the camera. It'll be very weird and confusing.
+
+2. Add a script that allows the camera only follow the position of the player, called `PlayerTracker`
+- Set a Transform property that represents to the Player
+- Set the position of the camera equals to the Player position (FPP) or with an offset to the Player position (TPP)
