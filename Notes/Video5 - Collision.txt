@@ -1,0 +1,12 @@
+Collision in Unity
+
+Unity will call the function named `OnCollisionEnter(Collision collision)` when the collider/rigidbody has begun touching another one.
+
+collision.collider.name: get the name of the collider that our collider has touched.
+
+* Set tags for the object, because of there are up to hundreds or thousands collider/rigidbody in an actual game, so that search through the colliders' name is not a good way.
+- Tags is used to group objects together 
+
+* Do something when the collider has begun touching to another one.
+- In this tutorials, we will make the player movement disabled or restart the game
+--> Simply, we make a reference of the PlayerMovement and whenever the collider hit something, set PlayerMovement.enabled equals `false`.
