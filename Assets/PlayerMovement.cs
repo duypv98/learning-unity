@@ -23,11 +23,11 @@ public class PlayerMovement : MonoBehaviour {
         Rb.AddForce(0, 0, ForwardForce * Time.fixedDeltaTime);
 
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) {
-            Rb.AddForce(SidewaysForce * Time.fixedDeltaTime, 0, 0);
+            Rb.AddForce(SidewaysForce * Time.fixedDeltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) {
-            Rb.AddForce(-SidewaysForce * Time.fixedDeltaTime, 0, 0);
+            Rb.AddForce(-SidewaysForce * Time.fixedDeltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
     }

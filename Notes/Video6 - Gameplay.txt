@@ -1,0 +1,10 @@
+* Prefab: used whenever we want to multiple objects of the same type.
+- In this tutorials, we need to create a lot of different obstacles
+
+* TODO: Extend the ground to go further.
+
+* Force: Add Force Mode
+
+* Drag: Add the air resistance 
+
+* Lighting: Add Fog
